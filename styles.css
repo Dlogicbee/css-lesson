@@ -1,0 +1,49 @@
+body {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    letter-spacing: 2px;
+    line-height: 1.5;
+    background-color: #020227;
+    text-align: center;
+}
+
+.wrapper {
+    width: 80%;
+    min-width: 480px;
+    margin: 30px auto;
+    background: linear-gradient(to bottom, skyblue, whitesmoke 20%, skyblue);
+    padding: 30px;
+    color: #020227;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.2rem;
+}
+
+.lesson-list li {
+    margin: 10px auto;
+    font-size: 1.5rem;
+    list-style-type: none;
+    background-color: #030352;
+    color: floralwhite;
+    padding: 20px 0px 10px 0px;
+    border-radius: 20px;
+}
+
+.lesson-list li:hover {
+    box-shadow: 2px 3px 4px skyblue;
+    transition: 7.1sec ease-in;
+}
+
+.lesson-link:link {
+    display: inline-block;
+    color: skyblue;
+    text-indent: -40px;
+    text-decoration: dotted;
+}
+
+.lesson-link:hover {
+    color: floralwhite;
+    text-decoration: underline
+}
