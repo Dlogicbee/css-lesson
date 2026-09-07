@@ -1,0 +1,55 @@
+body {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+    font-size: 16px;
+    background-color: #f4ad29;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.blog-post-card {
+    width: 60%;
+    min-width: 400px;
+    margin: 30px auto;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+.post-content {
+    margin: 5px 0px;
+    padding: 50px;
+}
+
+.post-title {
+    font-size: 1.8rem;
+    color: #040404;
+    margin-top: -40px;
+}
+
+.post-excerpt {
+    font-size: 1.2rem;
+    color: #040404;
+}
+
+.post-img {
+    width: 100%;
+    border-bottom: 1px solid #040404;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.read-more:link {
+    display: inline-block;
+    background-color: #f4ad29;
+    color: #040404;
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 10px;
+    font-size: 1.4rem;
+    text-decoration: none;
+}
+
+.read-more:hover {
+    background-color: #f6c873;
+    transition: 3sec linear;
+}
