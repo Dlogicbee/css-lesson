@@ -1,0 +1,67 @@
+* {
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 1.5;
+}
+
+body {
+    font-family:'Courier New', Courier, monospace;
+    background-color: floralwhite;
+    color: navy;
+    width: 90%;
+    margin: 70px auto;
+    padding: 0px;
+}
+
+header {
+    text-align: center;
+}
+
+img {
+    width: 60%;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: black
+}
+
+hr {
+    border: none;
+    border-bottom: 5px solid black;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: black;
+}
+
+strong {
+    font-size: 1.5rem;
+    color: black;
+}
+
+p {
+    font-size: 1.4rem;
+}
+
+main section {
+    display: inline-block;
+    min-width: 100px;
+    width: 30%;
+    margin: 20px auto;
+    vertical-align: top;
+}
+
+
+ul li {
+    font-size: 1.2rem;
+}
+
+footer p {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
