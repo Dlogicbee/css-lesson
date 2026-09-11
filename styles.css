@@ -21,19 +21,26 @@ h1 {
     font-size: 2.2rem;
 }
 
-.lesson-list li {
+.list {
     margin: 10px auto;
     font-size: 1.5rem;
     list-style-type: none;
     background-color: #030352;
     color: floralwhite;
-    padding: 20px 0px 10px 0px;
+    padding: 20px 40px;
     border-radius: 20px;
+    transition: box-shadow 2s linear, transform 1s ease-in-out;
 }
 
-.lesson-list li:hover {
-    box-shadow: 2px 3px 4px skyblue;
-    transition: 7.1sec ease-in;
+.list:hover {
+    box-shadow: 2px 3px 4px blue,
+                -2px -3px 4px blue;
+    transform: scale(1.03);
+}
+
+.sub-list {
+    list-style-type: none;
+    margin-top: 15px;
 }
 
 .lesson-link:link {
@@ -41,9 +48,10 @@ h1 {
     color: skyblue;
     text-indent: -40px;
     text-decoration: dotted;
+    transition: color 2s ease;
 }
 
 .lesson-link:hover {
     color: floralwhite;
-    text-decoration: underline
+    text-decoration: underline;
 }
