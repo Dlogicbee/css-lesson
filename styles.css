@@ -55,3 +55,7 @@ h1 {
     color: floralwhite;
     text-decoration: underline;
 }
+
+.lesson-link:active {
+    color: skyblue;
+}
