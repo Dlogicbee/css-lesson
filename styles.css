@@ -1,61 +1,68 @@
 body {
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 16px;
-    letter-spacing: 2px;
-    line-height: 1.5;
-    background-color: #020227;
-    text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px;
+  letter-spacing: 2px;
+  line-height: 1.5;
+  background-color: #020227;
+  text-align: center;
 }
 
 .wrapper {
-    width: 80%;
-    min-width: 480px;
-    margin: 30px auto;
-    background: linear-gradient(to bottom, skyblue, whitesmoke 20%, skyblue);
-    padding: 30px;
-    color: #020227;
+  width: 80%;
+  min-width: 480px;
+  margin: 30px auto;
+  background: linear-gradient(to bottom, skyblue, whitesmoke 20%, skyblue);
+  padding: 30px;
+  color: #020227;
 }
 
 h1 {
-    text-align: center;
-    font-size: 2.2rem;
+  text-align: center;
+  font-size: 2.2rem;
 }
 
 .list {
-    margin: 10px auto;
-    font-size: 1.5rem;
-    list-style-type: none;
-    background-color: #030352;
-    color: floralwhite;
-    padding: 20px 40px;
-    border-radius: 20px;
-    transition: box-shadow 2s linear, transform 1s ease-in-out;
+  margin: 10px auto;
+  font-size: 1.5rem;
+  list-style-type: none;
+  background-color: #030352;
+  color: floralwhite;
+  padding: 20px 40px;
+  border-radius: 20px;
+  transition:
+    box-shadow 2s linear,
+    transform 1s ease-in-out;
 }
 
 .list:hover {
-    box-shadow: 2px 3px 4px blue,
-                -2px -3px 4px blue;
-    transform: scale(1.03);
+  box-shadow:
+    2px 3px 4px blue,
+    -2px -3px 4px blue;
+  transform: scale(1.03);
 }
 
 .sub-list {
-    list-style-type: none;
-    margin-top: 15px;
+  list-style-type: none;
+  margin-top: 15px;
 }
 
 .lesson-link:link {
-    display: inline-block;
-    color: skyblue;
-    text-indent: -40px;
-    text-decoration: dotted;
-    transition: color 2s ease;
+  display: inline-block;
+  color: skyblue;
+  text-indent: -40px;
+  text-decoration: dotted;
+  transition: color 2s ease;
+}
+
+.lesson-link:visited {
+  color: skyblue;
 }
 
 .lesson-link:hover {
-    color: floralwhite;
-    text-decoration: underline;
+  color: floralwhite;
+  text-decoration: underline;
 }
 
 .lesson-link:active {
-    color: skyblue;
+  color: skyblue;
 }
