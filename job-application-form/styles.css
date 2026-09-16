@@ -1,0 +1,125 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px;
+  letter-spacing: 1px;
+  line-height: 1.5;
+}
+
+.container {
+  width: 80%;
+  margin: 20px auto;
+  padding: 40px;
+  background-color: #87ceeb;
+  color: #252527;
+  border: none;
+  border-radius: 15px;
+  box-shadow:
+    0 8px 18px grey,
+    0 -8px 18px grey;
+}
+
+h1 {
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+label:not(.radio-group) {
+  font-size: 1rem;
+  font-weight: 700;
+  display: block;
+  margin-top: 10px;
+}
+
+/* input sytle (radio button is excluded) */
+
+input:not(.radio-group-btn),
+textarea,
+select {
+  padding: 10px;
+  border: none;
+  background-color: #cbe5f0;
+  color: #252527;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  outline: none;
+}
+
+input:not(.radio-group-btn),
+textarea {
+  width: 95%;
+}
+
+select {
+  width: 100%;
+}
+
+input:not(.radio-group-btn):invalid,
+textarea:invalid,
+select:invalid {
+  border: 1px solid #ff0000;
+}
+
+input:not(.radio-group-btn):valid,
+textarea:valid,
+select:valid {
+  border: 1px solid #008000;
+}
+
+/* fielset and radio buttons styles */
+
+fieldset {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding: 20px;
+  border: 1px solid #252527;
+  border-radius: 5px;
+  width: 90%;
+}
+
+.radio-group-btn {
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 1px solid gray;
+  vertical-align: bottom;
+}
+
+.radio-group-btn:checked {
+  border: 2px solid green;
+}
+
+.radio-group-btn::before {
+  display: block;
+  content: " ";
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: none;
+  transform: translate(4px, 4px) scale(0);
+  transition: all 0.4s ease;
+}
+
+.radio-group-btn:checked::before {
+  background-color: green;
+  transform: translate(4.3px, 4.3px) scale(1);
+}
+
+/* button styles */
+
+.submit-btn {
+  display: block;
+  width: 100%;
+  margin-top: 5px;
+  padding: 8px 16px;
+  font-size: 1rem;
+  background-color: #008000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  transition: all 0.5s ease;
+}
+
+.submit-btn:hover {
+  background-color: #252527;
+}
