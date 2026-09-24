@@ -1,0 +1,54 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 16px;
+  background-color: #f3f5f1;
+  letter-spacing: 1px;
+  line-height: 1.5;
+}
+
+#email {
+  width: 500px;
+  margin: 50px auto;
+  padding: 50px;
+  border: 2px solid #808080;
+  background-color: #e7dbcc;
+  box-shadow: 4px 3px 2px #808080;
+}
+
+#confidential {
+  display: inline-block;
+  border: 5px solid #dc143c;
+  padding: 10px;
+  color: #dc143c;
+  font-size: 1.5rem;
+  font-weight: 800;
+  transform: rotate(-18deg) scale(1.1);
+  position: relative;
+  top: 2px;
+  left: 123px;
+}
+
+#top-secret {
+  display: inline-block;
+  font-size: 1rem;
+  padding: 10px;
+  color: #dc143c;
+  font-weight: 800;
+  border: 5px solid #dc143c;
+  transform: rotate(15deg) scale(1.1);
+  position: relative;
+  top: -18px;
+  left: 216px;
+}
+
+p {
+  font-size: 0.9rem;
+}
+
+.blurred {
+  filter: blur(3px);
+}
