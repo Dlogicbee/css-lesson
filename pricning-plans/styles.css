@@ -1,0 +1,167 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  background-color: burlywood;
+  text-align: center;
+  letter-spacing: 0.9px;
+}
+
+h1 {
+  margin-top: 30px;
+  margin-bottom: -2px;
+  font-size: 1.5rem;
+  color: #0e020f;
+  text-transform: uppercase;
+}
+
+.pricing-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 80%;
+  max-width: 900px;
+  margin: 10px auto;
+  padding: 0 10px;
+  border: 2px solid #0e020f;
+  background-color: #fff;
+  box-shadow: 0 2px 3px 2px #0003;
+  gap: 15px;
+}
+
+.pricing-card {
+  display: flex;
+  flex-flow: column wrap;
+  flex: 0 0 200px;
+  justify-content: space-between;
+  border: 2px solid #0e020f;
+  padding: 30px;
+  translate: all 0.5s ease-out;
+}
+
+.pricing-card:hover {
+  transform: scale(1.02);
+}
+
+.basic-plan {
+  order: 0;
+  background: #f3fff0;
+}
+
+.pro-plan {
+  order: 1;
+  flex-grow: 2;
+  background: #1e1ef80f;
+}
+
+.premium-plan {
+  order: 2;
+  background: #f3fff0;
+}
+
+h2 {
+  margin-bottom: 5px;
+}
+
+hr {
+  border: none;
+  border-bottom: 1px solid #0e020f;
+  margin-bottom: 15px;
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+.basic-plan
+  p:not(
+    :last-of-type,
+    :nth-of-type(1),
+    :nth-of-type(2),
+    :nth-of-type(7),
+    :nth-of-type(8),
+    :nth-of-type(9),
+    :nth-of-type(10),
+    :nth-of-type(11),
+    :nth-of-type(12),
+    :nth-of-type(13),
+    :nth-of-type(14)
+  )::after {
+  content: " ✔";
+  color: #0fc40f;
+}
+
+.basic-plan
+  p:not(
+    :first-of-type,
+    :nth-of-type(2),
+    :nth-of-type(3),
+    :nth-of-type(4),
+    :nth-of-type(5),
+    :nth-of-type(6),
+    :nth-of-type(7),
+    :nth-of-type(8),
+    :nth-of-type(10)
+  )::after {
+  content: " ❌️";
+  color: #fa0003;
+}
+
+.pro-plan
+  p:not(
+    :first-of-type,
+    :last-of-type,
+    :nth-of-type(2),
+    :nth-of-type(12),
+    :nth-of-type(13),
+    :nth-of-type(14)
+  )::after {
+  content: " ✔";
+  color: #0fc40f;
+}
+
+.pro-plan
+  p:not(
+    :first-of-type,
+    :last-of-type,
+    :nth-of-type(2),
+    :nth-of-type(3),
+    :nth-of-type(4),
+    :nth-of-type(5),
+    :nth-of-type(6),
+    :nth-of-type(7),
+    :nth-of-type(8),
+    :nth-of-type(9),
+    :nth-of-type(10),
+    :nth-of-type(11)
+  )::after {
+  content: " ❌️";
+  color: #fa0003;
+}
+
+.premium-plan p:not(:first-of-type, :nth-of-type(2), :nth-of-type(10))::after {
+  content: " ✔";
+  color: #0fc40f;
+}
+
+button {
+  display: block;
+  margin-top: 20px;
+  height: 45px;
+  width: 100%;
+  background-color: #deb887;
+  font-size: 1.3rem;
+  border: none;
+  border-radius: 2px;
+}
+
+button:hover {
+  background-color: #f0e68c;
+}
