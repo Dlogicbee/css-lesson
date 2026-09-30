@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 16px;
@@ -8,7 +12,12 @@ body {
 }
 
 .wrapper {
-  width: 80%;
+  display: flex;
+  flex-flow: column wrap;
+  flex: 0 1 0;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
   min-width: 480px;
   margin: 30px auto;
   background: linear-gradient(to bottom, skyblue, whitesmoke 20%, skyblue);
@@ -21,9 +30,24 @@ h1 {
   font-size: 2.2rem;
 }
 
+/* changing the layout to grid column and row with flex */
+
+.lesson-list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: stretch;
+  width: 80vw;
+  gap: 20px;
+}
+
 .list {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  flex: 1 1 300px;
   margin: 10px auto;
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   list-style-type: none;
   background-color: #030352;
   color: floralwhite;
